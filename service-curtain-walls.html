@@ -51,18 +51,18 @@
 
 :root {
     --primary: #0f766e;
-    --primary-dark: #115e59;
+    --primary-dark: #042f2e;
     --gold: #f59e0b;
     --gold-light: #fbbf24;
     --gold-dark: #d97706;
     --accent: #14b8a6;
-    --text: #1e293b;
-    --text-muted: #64748b;
+    --text: #e2e8f0;
+    --text-muted: #94a3b8;
     --white: #ffffff;
-    --bg-light: #f0fdfa;
+    --bg-light: #042f2e;
     --success: #10b981;
     --radius: 14px;
-    --shadow: 0 8px 30px rgba(15, 118, 110, 0.12);
+    --shadow: 0 10px 40px rgba(0,0,0,0.4);
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -78,7 +78,7 @@ html {
 
 body {
     font-family: 'Cairo', 'Segoe UI', Tahoma, sans-serif;
-    background: var(--bg-light);
+    background: var(--primary-dark);
     color: var(--text);
     line-height: 1.7;
     overflow-x: hidden;
@@ -104,12 +104,12 @@ img {
 
 /* ========== TOP BAR ========== */
 .topbar {
-    background: linear-gradient(90deg, #115e59, #0f766e);
+    background: linear-gradient(90deg, #042f2e, #0f766e);
     color: #f0fdfa;
     font-size: 14px;
     font-weight: 600;
     padding: 10px 0;
-    border-bottom: 1px solid rgba(20, 184, 166, 0.3);
+    border-bottom: 1px solid rgba(245, 158, 11, 0.25);
 }
 
 .topbar-inner {
@@ -121,7 +121,7 @@ img {
 }
 
 .topbar a {
-    color: var(--primary-dark);
+    color: var(--gold-light);
 }
 
 .topbar a:hover {
@@ -133,10 +133,10 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.98);
+    background: rgba(4, 47, 46, 0.97);
     backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(15, 118, 110, 0.15);
-    box-shadow: 0 4px 20px rgba(15, 118, 110, 0.1);
+    border-bottom: 1px solid rgba(245, 158, 11, 0.2);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.4);
 }
 
 .navbar {
@@ -153,7 +153,7 @@ header {
     gap: 12px;
     font-weight: 900;
     font-size: 22px;
-    color: var(--primary-dark);
+    color: var(--gold-light);
 }
 
 .logo-mark {
@@ -163,7 +163,7 @@ header {
     place-items: center;
     border-radius: 14px;
     background: linear-gradient(135deg, var(--gold), var(--gold-dark));
-    color: #115e59;
+    color: #0f766e;
     font-weight: 900;
     font-size: 22px;
     box-shadow: 0 6px 20px rgba(245, 158, 11,0.4);
@@ -193,7 +193,7 @@ header {
 .nav-desktop a:hover,
 .nav-desktop a.active {
     background: rgba(245, 158, 11,0.15);
-    color: var(--primary-dark);
+    color: var(--gold-light);
 }
 
 .btn {
@@ -214,7 +214,7 @@ header {
 
 .btn-gold {
     background: linear-gradient(135deg, var(--gold-light), var(--gold));
-    color: #115e59;
+    color: #0f766e;
     box-shadow: 0 8px 25px rgba(245, 158, 11,0.35);
 }
 
@@ -226,12 +226,12 @@ header {
 .btn-outline {
     background: transparent;
     border: 2px solid var(--gold);
-    color: var(--primary-dark);
+    color: var(--gold-light);
 }
 
 .btn-outline:hover {
     background: var(--gold);
-    color: #115e59;
+    color: #0f766e;
 }
 
 .btn-pulse {
@@ -252,7 +252,7 @@ header {
     border-radius: 12px;
     background: rgba(245, 158, 11,0.15);
     border: 1px solid rgba(245, 158, 11,0.3);
-    color: var(--primary-dark);
+    color: var(--gold-light);
     font-size: 22px;
     cursor: pointer;
     place-items: center;
@@ -298,7 +298,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    border-bottom: 1px solid rgba(15, 118, 110, 0.15);
+    border-bottom: 1px solid rgba(245, 158, 11,0.15);
 }
 
 .sidebar-close {
@@ -328,7 +328,7 @@ header {
 
 .sidebar-nav a:hover {
     background: rgba(245, 158, 11,0.1);
-    color: var(--primary-dark);
+    color: var(--gold-light);
 }
 
 .sidebar-submenu {
@@ -352,8 +352,8 @@ header {
     position: relative;
     padding: 90px 0 70px;
     background: 
-        radial-gradient(circle at 70% 20%, rgba(245, 158, 11,0.12), transparent 50%),
-        linear-gradient(180deg, #0f766e 0%, #115e59 100%);
+        radial-gradient(circle at 70% 20%, rgba(245, 158, 11,0.15), transparent 50%),
+        linear-gradient(180deg, #0f766e 0%, #042f2e 100%);
     overflow: hidden;
     text-align: center;
 }
@@ -361,7 +361,7 @@ header {
 .hero-badge {
     display: inline-block;
     background: rgba(245, 158, 11,0.15);
-    color: var(--primary-dark);
+    color: var(--gold-light);
     font-size: 14px;
     font-weight: 800;
     padding: 8px 22px;
@@ -418,7 +418,7 @@ header {
 .stat-num {
     font-size: 32px;
     font-weight: 900;
-    color: var(--primary-dark);
+    color: var(--gold-light);
     margin-bottom: 4px;
 }
 
@@ -501,7 +501,7 @@ section {
     place-items: center;
     font-size: 26px;
     margin-bottom: 18px;
-    color: var(--primary-dark);
+    color: var(--gold-light);
 }
 
 .service-card h3 {
@@ -565,7 +565,7 @@ section {
 .why-card h3 {
     font-size: 16px;
     font-weight: 800;
-    color: var(--primary-dark);
+    color: var(--gold-light);
     margin-bottom: 8px;
 }
 
@@ -676,7 +676,7 @@ section {
 .project-tag {
     display: inline-block;
     background: rgba(245, 158, 11,0.12);
-    color: var(--primary-dark);
+    color: var(--gold-light);
     font-size: 12px;
     font-weight: 700;
     padding: 4px 12px;
@@ -728,7 +728,7 @@ section {
     padding: 14px 18px;
     border-radius: 12px;
     border: 1px solid rgba(245, 158, 11,0.25);
-    background: rgba(15, 118, 110,0.8);
+    background: rgba(15,23,42,0.8);
     color: var(--white);
     font-size: 15px;
     font-family: inherit;
@@ -794,7 +794,7 @@ footer {
 .footer-logo {
     font-size: 22px;
     font-weight: 900;
-    color: #f0fdfa;
+    color: var(--gold-light);
     margin-bottom: 12px;
 }
 
@@ -839,7 +839,7 @@ footer a {
 .cities-badge {
     display: inline-block;
     background: rgba(245, 158, 11,0.12);
-    color: var(--primary-dark);
+    color: var(--gold-light);
     font-size: 13px;
     font-weight: 800;
     padding: 6px 18px;
@@ -906,7 +906,7 @@ footer a {
 }
 
 .city-link {
-    color: var(--primary-dark);
+    color: var(--gold-light);
     font-weight: 800;
     font-size: 14px;
 }
@@ -941,7 +941,7 @@ footer a {
 .district-tag {
     background: rgba(245, 158, 11,0.1);
     border: 1px solid rgba(245, 158, 11,0.25);
-    color: var(--primary-dark);
+    color: var(--gold-light);
     font-size: 13px;
     font-weight: 700;
     padding: 8px 16px;
@@ -951,7 +951,7 @@ footer a {
 
 .district-tag:hover {
     background: var(--gold);
-    color: #115e59;
+    color: #0f766e;
     border-color: var(--gold);
 }
 
@@ -1035,7 +1035,7 @@ footer a {
     color: #fff;
 }
 .ba-label.before { right: 8px; }
-.ba-label.after { left: 8px; background: rgba(245, 158, 11,0.9); color: #115e59; }
+.ba-label.after { left: 8px; background: rgba(245, 158, 11,0.9); color: #0f766e; }
 .ba-single { width:100%; }
 .ba-single img { width:100%; height:200px; object-fit:cover; display:block; }
 .ba-info { padding: 14px 16px; }
@@ -1070,7 +1070,7 @@ footer a {
 .tint-features span {
     background: rgba(245, 158, 11,0.12);
     border: 1px solid rgba(245, 158, 11,0.3);
-    color: var(--primary-dark);
+    color: var(--gold-light);
     font-size: 13px;
     font-weight: 700;
     padding: 8px 14px;
@@ -1099,7 +1099,7 @@ footer a {
     font-weight: 800;
 }
 .long-content h3 {
-    color: var(--primary-dark);
+    color: var(--gold-light);
     font-size: 18px;
     margin: 24px 0 10px;
 }
@@ -1144,7 +1144,7 @@ footer a {
 </style><style>
 .sidra-price{background:linear-gradient(145deg,#1e293b,#0f766e);border:1px solid rgba(245, 158, 11,.35);border-radius:18px;padding:22px;margin:24px 0;text-align:center}
 .sidra-price .amount{font-size:34px;font-weight:900;color:#f59e0b}
-.sidra-price .amount small{font-size:16px;color: var(--text-muted)}
+.sidra-price .amount small{font-size:16px;color:#94a3b8}
 .feat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:18px 0}
 .feat-card{background:#1e293b;border:1px solid rgba(245, 158, 11,.15);border-radius:14px;padding:16px;text-align:center;font-weight:700;font-size:14px}
 .step{background:#1e293b;border-radius:14px;padding:16px;margin-bottom:12px;border:1px solid rgba(255,255,255,.06)}
@@ -1152,7 +1152,7 @@ footer a {
 .why-list{list-style:none;padding:0}.why-list li{padding:10px 0;border-bottom:1px solid rgba(0,0,0,.06);font-weight:600}
 .why-list li:before{content:"✓ ";color:#f59e0b;font-weight:900}
 .city-tags{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
-.city-tags a{background:#1e293b;border:1px solid rgba(245, 158, 11,.25);color: #1e293b;padding:8px 14px;border-radius:50px;font-size:13px;text-decoration:none}
+.city-tags a{background:#1e293b;border:1px solid rgba(245, 158, 11,.25);color:#e2e8f0;padding:8px 14px;border-radius:50px;font-size:13px;text-decoration:none}
 .svc-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin:16px 0}
 .svc-gallery img,.svc-hero{width:100%;object-fit:cover;border-radius:14px}
 .svc-hero{max-height:320px;margin:12px 0}
@@ -1162,7 +1162,7 @@ footer a {
 .faq-item.open .faq-a{display:block}
 .light-section{background:#f8fafc;color:#0f766e;border-radius:20px;padding:28px 20px;margin:28px 0}
 .light-section h2{color:#0f766e}
-.related a{display:block;background:#1e293b;padding:12px 14px;border-radius:12px;margin-bottom:8px;color: #1e293b;text-decoration:none}
+.related a{display:block;background:#1e293b;padding:12px 14px;border-radius:12px;margin-bottom:8px;color:#e2e8f0;text-decoration:none}
 </style>
 <style>select,input,button,form{pointer-events:auto!important} .svc-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px} .svc-gallery img{width:100%;height:130px;object-fit:cover;border-radius:12px}</style><style>
 .faq-q,.faq-question{display:flex!important;flex-direction:row-reverse!important;justify-content:space-between!important;align-items:center!important;width:100%;text-align:right}
@@ -1172,7 +1172,7 @@ footer a {
 .faq-q{width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 18px;background:transparent;border:none;color:#fff;font-family:Cairo,sans-serif;font-size:15px;font-weight:700;cursor:pointer;text-align:right;direction:rtl}
 .faq-q-text{flex:1;text-align:right}
 .faq-plus{width:32px;height:32px;border-radius:50%;background:rgba(245, 158, 11,.22);color:#f59e0b;display:inline-flex;align-items:center;justify-content:center;font-size:22px;font-weight:700;line-height:1;flex-shrink:0;pointer-events:none;user-select:none}
-.faq-a{display:none;padding:0 18px 16px;color: var(--text-muted);line-height:1.85;font-size:14px;text-align:right}
+.faq-a{display:none;padding:0 18px 16px;color:#94a3b8;line-height:1.85;font-size:14px;text-align:right}
 .faq-item.open .faq-a{display:block!important}
 .faq-item.open .faq-plus{background:rgba(245, 158, 11,.4)}
 </style><style>
@@ -1181,7 +1181,7 @@ footer a {
 .faq-q{width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 18px;background:transparent;border:none;color:#fff;font-family:Cairo,sans-serif;font-size:15px;font-weight:700;cursor:pointer;text-align:right;direction:rtl}
 .faq-q-text{flex:1;text-align:right}
 .faq-plus{width:32px;height:32px;border-radius:50%;background:rgba(245, 158, 11,.22);color:#f59e0b;display:inline-flex;align-items:center;justify-content:center;font-size:22px;font-weight:700;line-height:1;flex-shrink:0;pointer-events:none}
-.faq-a{display:none;padding:0 18px 16px;color: var(--text-muted);line-height:1.85;font-size:14px;text-align:right}
+.faq-a{display:none;padding:0 18px 16px;color:#94a3b8;line-height:1.85;font-size:14px;text-align:right}
 .faq-item.open .faq-a{display:block!important}
 .faq-item.open .faq-plus{background:rgba(245, 158, 11,.4)}
 </style><meta property="og:url" content="https://www.lamsa-nazafa.com/service-curtain-walls.html">
@@ -1198,18 +1198,18 @@ footer a {
 <nav class="sidebar-nav"><a href="index.html">الرئيسية</a><a href="services.html">خدماتنا</a><a href="service-tint.html">العزل والتضليل</a><a href="contact.html">تواصل</a></nav></aside>
 <main>
 <section class="hero" style="padding:36px 0 16px"><div class="container">
-<div style="font-size:12px;color: var(--text-muted);margin-bottom:8px">الرئيسية &lt; الخدمات &lt; تنظيف الحوائط الستائرية</div>
+<div style="font-size:12px;color:#94a3b8;margin-bottom:8px">الرئيسية &lt; الخدمات &lt; تنظيف الحوائط الستائرية</div>
 <span class="hero-badge">خدمة متخصصة</span>
 <img class="svc-hero" src="images/IMG-20240966-WA00037.jpg" alt="تنظيف الحوائط الستائرية" loading="lazy">
 <h1 style="font-size:clamp(22px,5vw,32px)">تنظيف الحوائط الستائرية</h1>
-<p style="color: var(--text-muted);line-height:1.75">تنظيف Curtain Wall للأبراج</p>
+<p style="color:#94a3b8;line-height:1.75">تنظيف Curtain Wall للأبراج</p>
 <div class="hero-btns" style="margin-top:14px">
 <a class="btn btn-gold btn-pulse" target="_blank" href="https://wa.me/966509575411?text=اطلب%20عرض%20سعر%20%D8%AA%D9%86%D8%B8%D9%8A%D9%81%20%D8%A7%D9%84%D8%AD%D9%88%D8%A7%D8%A6%D8%B7%20%D8%A7%D9%84%D8%B3%D8%AA%D8%A7%D8%A6%D8%B1%D9%8A%D8%A9">اطلب عرض سعر</a>
 <a class="btn btn-outline" target="_blank" href="https://wa.me/966509575411">واتساب مباشر</a>
 </div></div></section>
 <section><div class="container">
 <div class="sidra-price">
-<div style="color: var(--text-muted);font-size:14px">أسعار تبدأ من</div>
+<div style="color:#94a3b8;font-size:14px">أسعار تبدأ من</div>
 <div class="amount">499.00 <small>ر.س</small></div>
 <p style="color:#cbd5e1;font-size:14px;margin:10px 0">تسعيرة دقيقة ومجانية خلال 30 دقيقة</p>
 <a class="btn btn-gold" style="width:100%;max-width:300px;margin:6px 0" target="_blank" href="https://wa.me/966509575411?text=اطلب%20عرض%20سعر%20%D8%AA%D9%86%D8%B8%D9%8A%D9%81%20%D8%A7%D9%84%D8%AD%D9%88%D8%A7%D8%A6%D8%B7%20%D8%A7%D9%84%D8%B3%D8%AA%D8%A7%D8%A6%D8%B1%D9%8A%D8%A9">اطلب عرض سعر</a>
@@ -1240,11 +1240,11 @@ footer a {
   <form id="svcBookForm" action="#" method="get" style="max-width:440px;margin:16px auto 0;text-align:right;position:relative;z-index:50;">
     <div class="form-group" style="margin-bottom:12px;">
       <input id="svcName" name="name" type="text" placeholder="الاسم الكريم *" required
-        style="width:100%;padding:14px;border-radius:12px;border:1px solid rgba(245, 158, 11,.35);background: #0f766e;color:#fff;font-size:16px;">
+        style="width:100%;padding:14px;border-radius:12px;border:1px solid rgba(245, 158, 11,.35);background:#0f766e;color:#fff;font-size:16px;">
     </div>
     <div class="form-group" style="margin-bottom:12px;">
       <select id="svcService" name="service" required
-        style="width:100%;padding:14px;border-radius:12px;border:1px solid rgba(245, 158, 11,.35);background: #0f766e;color:#fff;font-size:16px;-webkit-appearance:menulist;">
+        style="width:100%;padding:14px;border-radius:12px;border:1px solid rgba(245, 158, 11,.35);background:#0f766e;color:#fff;font-size:16px;-webkit-appearance:menulist;">
         <option value="تنظيف الحوائط الستائرية">تنظيف الحوائط الستائرية</option>
         <option value="معاينة عامة">معاينة / استفسار</option>
         <option value="عقد صيانة">عقد صيانة دورية</option>
@@ -1252,7 +1252,7 @@ footer a {
     </div>
     <div class="form-group" style="margin-bottom:12px;">
       <input id="svcDistrict" name="district" type="text" placeholder="الحي / المدينة"
-        style="width:100%;padding:14px;border-radius:12px;border:1px solid rgba(245, 158, 11,.35);background: #0f766e;color:#fff;font-size:16px;">
+        style="width:100%;padding:14px;border-radius:12px;border:1px solid rgba(245, 158, 11,.35);background:#0f766e;color:#fff;font-size:16px;">
     </div>
     <button type="button" id="svcWaBtn"
       style="width:100%;padding:16px;border:none;border-radius:12px;background:#f59e0b;color:#0f766e;font-weight:900;font-size:16px;cursor:pointer;">
@@ -1269,7 +1269,7 @@ footer a {
 <p style="color:#cbd5e1;line-height:2;font-size:15px;margin:0 0 14px;">
 خدمة <strong>تنظيف الحوائط الستائرية</strong> من <strong>لمسه نظافه الواجهات الزجاجيه والجلي البلاد</strong> موجّهة لأصحاب الفلل والمباني التجارية في الرياض. نغطي أحياء النرجس والياسمين والملقا والعارض والقيروان وحطين والصحافة والعليا ولبن، مع معاينة مجانية وتسعيرة واضحة خلال 30 دقيقة.
 </p>
-<p style="color: var(--text-muted);line-height:1.95;font-size:14px;margin:0;">
+<p style="color:#94a3b8;line-height:1.95;font-size:14px;margin:0;">
 إذا كنت تبحث عن تنظيف الحوائط الستائرية بالرياض أو أفضل شركة تنظيف الحوائط الستائرية أو أسعار تنظيف الحوائط الستائرية اليوم، فريقنا ينفّذ بمعايير سلامة عالية ومعدات حديثة. اطلب عرض السعر على واتساب 0509575411.
 </p>
 </section>

@@ -50,18 +50,18 @@
 
 :root {
     --primary: #0f766e;
-    --primary-dark: #115e59;
+    --primary-dark: #042f2e;
     --gold: #f59e0b;
     --gold-light: #fbbf24;
     --gold-dark: #d97706;
     --accent: #14b8a6;
-    --text: #1e293b;
-    --text-muted: #64748b;
+    --text: #e2e8f0;
+    --text-muted: #94a3b8;
     --white: #ffffff;
-    --bg-light: #f0fdfa;
+    --bg-light: #042f2e;
     --success: #10b981;
     --radius: 14px;
-    --shadow: 0 8px 30px rgba(15, 118, 110, 0.12);
+    --shadow: 0 10px 40px rgba(0,0,0,0.4);
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -77,7 +77,7 @@ html {
 
 body {
     font-family: 'Cairo', 'Segoe UI', Tahoma, sans-serif;
-    background: var(--bg-light);
+    background: var(--primary-dark);
     color: var(--text);
     line-height: 1.7;
     overflow-x: hidden;
@@ -103,12 +103,12 @@ img {
 
 /* ========== TOP BAR ========== */
 .topbar {
-    background: linear-gradient(90deg, #115e59, #0f766e);
+    background: linear-gradient(90deg, #042f2e, #0f766e);
     color: #f0fdfa;
     font-size: 14px;
     font-weight: 600;
     padding: 10px 0;
-    border-bottom: 1px solid rgba(20, 184, 166, 0.3);
+    border-bottom: 1px solid rgba(245, 158, 11, 0.25);
 }
 
 .topbar-inner {
@@ -120,7 +120,7 @@ img {
 }
 
 .topbar a {
-    color: var(--primary-dark);
+    color: var(--gold-light);
 }
 
 .topbar a:hover {
@@ -132,10 +132,10 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.98);
+    background: rgba(4, 47, 46, 0.97);
     backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(15, 118, 110, 0.15);
-    box-shadow: 0 4px 20px rgba(15, 118, 110, 0.1);
+    border-bottom: 1px solid rgba(245, 158, 11, 0.2);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.4);
 }
 
 .navbar {
@@ -152,7 +152,7 @@ header {
     gap: 12px;
     font-weight: 900;
     font-size: 22px;
-    color: var(--primary-dark);
+    color: var(--gold-light);
 }
 
 .logo-mark {
@@ -162,7 +162,7 @@ header {
     place-items: center;
     border-radius: 14px;
     background: linear-gradient(135deg, var(--gold), var(--gold-dark));
-    color: #115e59;
+    color: #0f766e;
     font-weight: 900;
     font-size: 22px;
     box-shadow: 0 6px 20px rgba(245, 158, 11,0.4);
@@ -192,7 +192,7 @@ header {
 .nav-desktop a:hover,
 .nav-desktop a.active {
     background: rgba(245, 158, 11,0.15);
-    color: var(--primary-dark);
+    color: var(--gold-light);
 }
 
 .btn {
@@ -213,7 +213,7 @@ header {
 
 .btn-gold {
     background: linear-gradient(135deg, var(--gold-light), var(--gold));
-    color: #115e59;
+    color: #0f766e;
     box-shadow: 0 8px 25px rgba(245, 158, 11,0.35);
 }
 
@@ -225,12 +225,12 @@ header {
 .btn-outline {
     background: transparent;
     border: 2px solid var(--gold);
-    color: var(--primary-dark);
+    color: var(--gold-light);
 }
 
 .btn-outline:hover {
     background: var(--gold);
-    color: #115e59;
+    color: #0f766e;
 }
 
 .btn-pulse {
@@ -251,7 +251,7 @@ header {
     border-radius: 12px;
     background: rgba(245, 158, 11,0.15);
     border: 1px solid rgba(245, 158, 11,0.3);
-    color: var(--primary-dark);
+    color: var(--gold-light);
     font-size: 22px;
     cursor: pointer;
     place-items: center;
@@ -297,7 +297,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    border-bottom: 1px solid rgba(15, 118, 110, 0.15);
+    border-bottom: 1px solid rgba(245, 158, 11,0.15);
 }
 
 .sidebar-close {
@@ -327,7 +327,7 @@ header {
 
 .sidebar-nav a:hover {
     background: rgba(245, 158, 11,0.1);
-    color: var(--primary-dark);
+    color: var(--gold-light);
 }
 
 .sidebar-submenu {
@@ -351,8 +351,8 @@ header {
     position: relative;
     padding: 90px 0 70px;
     background: 
-        radial-gradient(circle at 70% 20%, rgba(245, 158, 11,0.12), transparent 50%),
-        linear-gradient(180deg, #0f766e 0%, #115e59 100%);
+        radial-gradient(circle at 70% 20%, rgba(245, 158, 11,0.15), transparent 50%),
+        linear-gradient(180deg, #0f766e 0%, #042f2e 100%);
     overflow: hidden;
     text-align: center;
 }
@@ -360,7 +360,7 @@ header {
 .hero-badge {
     display: inline-block;
     background: rgba(245, 158, 11,0.15);
-    color: var(--primary-dark);
+    color: var(--gold-light);
     font-size: 14px;
     font-weight: 800;
     padding: 8px 22px;
@@ -417,7 +417,7 @@ header {
 .stat-num {
     font-size: 32px;
     font-weight: 900;
-    color: var(--primary-dark);
+    color: var(--gold-light);
     margin-bottom: 4px;
 }
 
@@ -500,7 +500,7 @@ section {
     place-items: center;
     font-size: 26px;
     margin-bottom: 18px;
-    color: var(--primary-dark);
+    color: var(--gold-light);
 }
 
 .service-card h3 {
@@ -564,7 +564,7 @@ section {
 .why-card h3 {
     font-size: 16px;
     font-weight: 800;
-    color: var(--primary-dark);
+    color: var(--gold-light);
     margin-bottom: 8px;
 }
 
@@ -675,7 +675,7 @@ section {
 .project-tag {
     display: inline-block;
     background: rgba(245, 158, 11,0.12);
-    color: var(--primary-dark);
+    color: var(--gold-light);
     font-size: 12px;
     font-weight: 700;
     padding: 4px 12px;
@@ -727,7 +727,7 @@ section {
     padding: 14px 18px;
     border-radius: 12px;
     border: 1px solid rgba(245, 158, 11,0.25);
-    background: rgba(15, 118, 110,0.8);
+    background: rgba(15,23,42,0.8);
     color: var(--white);
     font-size: 15px;
     font-family: inherit;
@@ -793,7 +793,7 @@ footer {
 .footer-logo {
     font-size: 22px;
     font-weight: 900;
-    color: #f0fdfa;
+    color: var(--gold-light);
     margin-bottom: 12px;
 }
 
@@ -838,7 +838,7 @@ footer a {
 .cities-badge {
     display: inline-block;
     background: rgba(245, 158, 11,0.12);
-    color: var(--primary-dark);
+    color: var(--gold-light);
     font-size: 13px;
     font-weight: 800;
     padding: 6px 18px;
@@ -898,7 +898,7 @@ footer a {
 }
 
 .city-link {
-    color: var(--primary-dark);
+    color: var(--gold-light);
     font-weight: 800;
     font-size: 14px;
 }
@@ -933,7 +933,7 @@ footer a {
 .district-tag {
     background: rgba(245, 158, 11,0.1);
     border: 1px solid rgba(245, 158, 11,0.25);
-    color: var(--primary-dark);
+    color: var(--gold-light);
     font-size: 13px;
     font-weight: 700;
     padding: 8px 16px;
@@ -943,7 +943,7 @@ footer a {
 
 .district-tag:hover {
     background: var(--gold);
-    color: #115e59;
+    color: #0f766e;
     border-color: var(--gold);
 }
 
@@ -992,7 +992,7 @@ footer a {
             <a href="index.html">الرئيسية</a>
             <a href="about.html">من نحن</a>
             <a href="services.html">خدماتنا</a>
-            <div style="padding:12px 24px 6px; font-size:13px; color: var(--primary-dark); font-weight:800;">مركز الثقة</div>
+            <div style="padding:12px 24px 6px; font-size:13px; color:var(--gold-light); font-weight:800;">مركز الثقة</div>
             <div class="sidebar-submenu">
                 <a href="why-us.html">لماذا نحن؟</a>
                 <a href="licenses.html">التراخيص والاعتمادات</a>
